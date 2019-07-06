@@ -1,0 +1,11 @@
+{
+  "name": "LearnJStoPro",
+  "short_name": "LearnJStoPro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Learn JS to Senior (junior)",
+  "related_applications": [{
+    "platform": "web"
+  }]
+}
