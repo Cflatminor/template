@@ -1,0 +1,22 @@
+{
+  "name": "projslearn",
+  "version": "1.0.0",
+  "description": "learn js to pro",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "roman",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "gulp": "^4.0.2"
+  }
+}
