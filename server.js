@@ -11,8 +11,8 @@ if (process.env.MODE === 'dev') {
 app.use(express.static(__dirname + ''));
 app.set('view engine', '.njk');
 nunjucks.configure('./', {
-    autoescape: true,
-    express: app
+  autoescape: true,
+  express: app
 });
 
 app.use('/', require('./src/controller/HomePageController.js'));

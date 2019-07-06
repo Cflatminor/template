@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "test",
-    "server": "nodemon server.js -e js,njk,scss,env",
-    "gulp": "gulp"
+    "server": "nodemon server.js -e js,njk,scss",
+    "gulp": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,14 @@
   "author": "roman",
   "license": "UNLICENSED",
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
     "nodemon": "^1.19.1"
   },
   "dependencies": {

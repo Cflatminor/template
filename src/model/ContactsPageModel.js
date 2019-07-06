@@ -1,7 +1,7 @@
 const HeaderMenuModel = require('./HeaderMenuModel.js');
 
 function HomePageModel () {
-  this.title = 'Home Page',
+  this.title = 'Contacts Page',
   this.test = process.env.DB_HOST,
   this.header_menu = getHeaderMenu();
 

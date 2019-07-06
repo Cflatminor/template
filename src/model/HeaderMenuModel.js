@@ -1,7 +1,3 @@
-// module.exports = {
-//   item1: 'https://gitlab.com/roman.bogdanov/learnjstopro'
-// }
-
 class HeaderMenuModel {
   constructor () {
     this.homePage = this.homePage();
