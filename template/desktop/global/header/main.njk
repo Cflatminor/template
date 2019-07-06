@@ -1,19 +1,9 @@
 <nav class="header__navigation">
   <ul class="navigation__list">
-    <li class="item">
-      <a href="#">123</a>
-    </li>
-
-    <li class="item">
-      <a href="#">123</a>
-    </li>
-
-    <li class="item">
-      <a href="#">123</a>
-    </li>
-
-    <li class="item">
-      <a href="#">123</a>
-    </li>
+    {% for item in header_menu%}
+      <li class="item">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>

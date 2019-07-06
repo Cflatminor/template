@@ -17,6 +17,7 @@ nunjucks.configure('./', {
 
 app.use('/', require('./src/controller/HomePageController.js'));
 app.use('/contacts', require('./src/controller/ContactsPageController.js'));
+app.use('/developer', require('./src/controller/DeveloperPageController.js'));
 
 app.listen(port, function() {
   console.log(`We are on ${port}`);

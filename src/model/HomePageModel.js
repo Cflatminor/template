@@ -3,12 +3,18 @@ const HeaderMenuModel = require('./HeaderMenuModel.js');
 function HomePageModel () {
   this.title = 'modelhomepage',
   this.test = process.env.DB_HOST,
-  this.menu = getHeaderMenu();
+  this.header_menu = getHeaderMenu();
 
   function getHeaderMenu () {
-    return new HeaderMenuModel();
+    let header_menu = [];
+    let header_menu_object = new HeaderMenuModel();
+
+    for (let key in header_menu_object) {
+      header_menu.push(header_menu_object[key]);
+    }
+
+    return header_menu;
   }
-  console.log (this);
 }
 
 module.exports =  new HomePageModel();
