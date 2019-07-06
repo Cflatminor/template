@@ -4,11 +4,13 @@
   "description": "learn js to pro",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "server": "nodemon server.js -e js,njk,scss,env",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "-"
+    "url": "https://gitlab.com/roman.bogdanov/learnjstopro"
   },
   "keywords": [
     "-"
@@ -17,6 +19,11 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "express": "^4.17.1",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "nunjucks": "^3.2.0"
   }
 }

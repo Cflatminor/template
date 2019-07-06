@@ -1,0 +1,17 @@
+{% extends 'template/desktop/base.njk' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}
+    <title>{{ title }}</title>
+  {% endblock %}
+</head>
+
+<body>
+  {% block body %}
+    <p>he11o from contacts</p>
+    <a href="{{ menu.contactsPage.url }}">{{ test }}</a>
+  {% endblock %}
+</body>
+</html>

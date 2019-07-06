@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {% block meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% endblock %}
+
+  {% block title %}
+    <title>{{ title }}</title>
+  {% endblock %}
+</head>
+
+<body>
+  <div id="app">
+    <main class="main">
+      <header class="main__header">
+        {% block header %}
+          {% include 'template/desktop/global/header/main.njk' %}
+        {% endblock %}
+      </header>
+
+      <div class="main__body">
+        {% block body %}{% endblock %}
+      </div>
+    </main>
+
+    <footer class="main__footer">
+      {% block footer %}
+        {% include 'template/desktop/global/footer/main.njk' %}
+      {% endblock %}
+    </footer>
+  </div>
+
+  {% block application %}
+  {% endblock %}
+</body>
+</html>

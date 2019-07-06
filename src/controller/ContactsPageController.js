@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+
+router.get('/', function (request, response) {
+  response.render('template/desktop/ContactsPage/index.njk', {
+    title: 'ContactsPage'
+  });
+})
+
+module.exports = router;
