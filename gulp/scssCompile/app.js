@@ -1,3 +1,5 @@
+'use strict';
+
 const { gulp, src, dest } = require ('gulp');
 const sass = require ('gulp-sass');
 const concat = require ('gulp-concat');

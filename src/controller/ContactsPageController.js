@@ -4,6 +4,6 @@ const ContactsPageModel = require('../model/ContactsPageModel.js'); // TODO abso
 
 router.get('/', function (request, response) {
   return response.render('template/desktop/ContactsPage/index.njk', ContactsPageModel);
-})
+});
 
 module.exports = router;
