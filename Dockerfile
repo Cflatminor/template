@@ -1,7 +1,7 @@
 FROM node:10
 
 # Создать директорию app
-WORKDIR app/
+WORKDIR /home/roman/Documents/lala/pmmm
 
 # Установить зависимости приложения
 # Используется символ подстановки для копирования как package.json, так и package-lock.json,
@@ -14,7 +14,7 @@ RUN npm install
 
 # Скопировать исходники приложения
 #COPY src ./pm
-COPY src /app
+COPY ./ /home/roman/Documents/lala/pmmm
 
-EXPOSE 8080
+#EXPOSE 3000
 CMD [ "node", "server.js" ]
