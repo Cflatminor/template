@@ -1,9 +1,10 @@
 const HeaderMenuModel = require('./HeaderMenuModel.js');
+// const dbclient = require('../repository/DatabaseClient.js');
 
 function HomePageModel () {
   this.title = 'Home Page';
   this.header_menu = getHeaderMenu();
-  // this.lalala = arra;
+  // this.array = getArray();
 
   function getHeaderMenu () {
     let header_menu = [];
@@ -15,6 +16,13 @@ function HomePageModel () {
 
     return header_menu;
   }
+
+  // function getArray () {
+  //   dbclient.db("Cluster0").collection("notes").find({}).toArray(function (error, data) {
+  //     console.log (data);
+  //     response.send(data);
+  //   });
+  // }
 }
 
 module.exports = new HomePageModel();

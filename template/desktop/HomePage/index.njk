@@ -12,6 +12,8 @@
   {% block body %}
     <p>he11o from home</p>
 
+      <p>{{ array }}</p>
+
       <ol>
         {% for item in data %}
             <li style="margin-bottom: 15px;"><span>TITLE: {{ item.title }};&nbsp;</span><br><span>TEXT: {{ item.text }}</span></li>

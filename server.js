@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const nunjucks = require('nunjucks');
 const port = process.env.PORT || 8000;
-const DatabaseClient = require('./src/DatabaseClient.js');
+const DatabaseClient = require('./src/repository/DatabaseClient.js');
 const MongoClient = require("mongodb").MongoClient;
 const mongodb = new MongoClient(DatabaseClient.url, { useNewUrlParser: true });
 
