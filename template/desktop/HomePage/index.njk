@@ -11,6 +11,12 @@
 <body>
   {% block body %}
     <p>he11o from home</p>
+
+      <ol>
+        {% for item in data %}
+            <li style="margin-bottom: 15px;"><span>TITLE: {{ item.title }};&nbsp;</span><br><span>TEXT: {{ item.text }}</span></li>
+        {% endfor %}
+      </ol>
   {% endblock %}
 
   {% block application %}

@@ -1,23 +1,22 @@
-version: '2'
-services:
-  app:
-    build: .
-    links:
-      - me-app:app
-    volumes:
-      - .:/home/roman/Documents/lala/pmmm
-      - /home/roman/Documents/lala/pmmm/node_modules
-    ports:
-      - "3000:3000"
-
-  web:
-    depends_on: ["citrus-service-app"]
-    image: wrkngu0/caddy:0.11.1
-    container_name: webserver
-    links:
-      - me-app:app
-    expose:
-      - 8080
-    volumes:
-      - .:/var/www/application/
-      - ./Caddyfile:/etc/caddy/Caddyfile
+#version: '2'
+#services:
+#  app:
+#    build: .
+#    links:
+#      - me-app:app
+#    volumes:
+#      - .:/home/roman/Documents/lala/pmmm
+#      - /home/roman/Documents/lala/pmmm/node_modules
+#    ports:
+#      - "3000:3000"
+#
+#  web:
+#    depends_on: ["citrus-service-app"]
+#    image: wrkngu0/caddy:0.11.1
+#    container_name: webserver
+#    links:
+#      - me-app:app
+#    expose:
+#      - 8080
+#    volumes:
+#      - .:/var/www/application/

@@ -1,11 +1,9 @@
 {
   "name": "LearnJStoPro",
   "short_name": "LearnJStoPro",
+  "url": "localhost:3000",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Learn JS to Senior (junior)",
-  "related_applications": [{
-    "platform": "web"
-  }]
+  "description": "Learn JS to Senior (junior)"
 }

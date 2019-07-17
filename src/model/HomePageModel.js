@@ -2,8 +2,8 @@ const HeaderMenuModel = require('./HeaderMenuModel.js');
 
 function HomePageModel () {
   this.title = 'Home Page';
-  this.test = process.env.DB_HOST;
   this.header_menu = getHeaderMenu();
+  // this.lalala = arra;
 
   function getHeaderMenu () {
     let header_menu = [];
@@ -17,4 +17,4 @@ function HomePageModel () {
   }
 }
 
-module.exports =  new HomePageModel();
+module.exports = new HomePageModel();

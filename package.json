@@ -26,6 +26,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
+    "mongodb": "^3.2.7",
     "nodemon": "^1.19.1"
   },
   "dependencies": {
